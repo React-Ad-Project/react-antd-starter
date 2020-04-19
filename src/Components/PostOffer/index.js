@@ -47,7 +47,7 @@ export default class PostOffer extends Component {
           <div style={{fontFamily:"Josefin Sans"}}>Category</div>
           <Select
             defaultValue="lucy"
-            style={{ width: 300, borderColor:"#8A98BA" }}
+            style={{ width: 300, borderColor:"#8A98BA"}}
             onChange={handleChange}
            
           >
