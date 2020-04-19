@@ -18,7 +18,7 @@ const SignIn = () => {
         title="Sign In"
       />
       <Form
-        size="small"
+        size="large"
         name="normal_login"
         className="login-form signUpformContainer"
         initialValues={{
@@ -36,10 +36,8 @@ const SignIn = () => {
           ]}
         >
           <Input
-            prefix={
-              <UserOutlined className=" inputStyle site-form-item-icon" />
-            }
-            // style={{ borderRadius: 10 }}
+            prefix={<UserOutlined className="site-form-item-icon" />}
+            className="inputStyle"
             placeholder="Username"
           />
         </Form.Item>
@@ -53,8 +51,8 @@ const SignIn = () => {
           ]}
         >
           <Input
-            prefix={<LockOutlined className="site-form-item-icon inputStyle" />}
-            // style={{ borderRadius: 10 }}
+            prefix={<LockOutlined className="site-form-item-icon fieldStyle" />}
+            className="inputStyle"
             type="password"
             placeholder="Password"
           />
