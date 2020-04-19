@@ -11,7 +11,7 @@ const OfferView = () => {
       title: "Ifthar Hotel",
       location: "Edapally, Ernakulam",
       imgUrl: " https://wallpaperaccess.com/full/767046.jpg",
-      category: "arabian",
+      category: "Arabian",
       rating: 4.2,
       off: "45% Off",
       distance: 2.1,
@@ -20,7 +20,7 @@ const OfferView = () => {
       title: "Ifthar Hotel",
       location: "Edapally, Ernakulam",
       imgUrl: " https://wallpaperaccess.com/full/767046.jpg",
-      category: "arabian",
+      category: "Arabian",
       rating: 4.2,
       off: "45% Off",
       distance: 2.1,
@@ -29,7 +29,7 @@ const OfferView = () => {
       title: "Ifthar Hotel",
       location: "Edapally, Ernakulam",
       imgUrl: "https://wallpaperaccess.com/full/767046.jpg ",
-      category: "arabian",
+      category: "Arabian",
       rating: 4.2,
       off: "45% Off",
       distance: 2.1,
@@ -38,7 +38,7 @@ const OfferView = () => {
       title: "Ifthar Hotel",
       location: "Edapally, Ernakulam",
       imgUrl: "https://wallpaperaccess.com/full/767046.jpg ",
-      category: "arabian",
+      category: "Arabian",
       rating: 4.2,
       off: "45% Off",
       distance: 2.1,
@@ -47,7 +47,7 @@ const OfferView = () => {
       title: "Ifthar Hotel",
       location: "Edapally, Ernakulam",
       imgUrl: "https://wallpaperaccess.com/full/767046.jpg ",
-      category: "arabian",
+      category: "Arabian",
       rating: 4.2,
       off: "45% Off",
       distance: 2.1,
@@ -68,6 +68,7 @@ const OfferView = () => {
           prefix={<SearchOutlined />}
           size="default"
           placeholder="Search...."
+          //   onSearch={(value) => console.log(value)}
         />
       </div>
       <div className="content">
