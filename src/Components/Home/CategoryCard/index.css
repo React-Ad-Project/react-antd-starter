@@ -7,4 +7,8 @@
   background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/owl1.jpg);
   border-radius: 15px;
   margin: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
