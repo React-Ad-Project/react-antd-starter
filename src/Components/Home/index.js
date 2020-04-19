@@ -67,8 +67,8 @@ export default class index extends Component {
           <div className="wrapper">
             <CategoryCard cardName="Cafes" />
             <CategoryCard cardName="Theaters" />
-            <CategoryCard cardName="Cafes" />
-            <CategoryCard cardName="Cafes" />
+            <CategoryCard cardName="Electronics" />
+            <CategoryCard cardName="Groceries" />
             <CategoryCard cardName="Cafes" />
             <CategoryCard cardName="Cafes" />
           </div>

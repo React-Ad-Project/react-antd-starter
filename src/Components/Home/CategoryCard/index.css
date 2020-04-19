@@ -4,7 +4,7 @@
   align-items: center;
   min-width: 120px;
   min-height: 120px;
-  background: linear-gradient(hsla(0, 100%, 50%, 0.45), rgba(255, 0, 0, 0.45)), url(https://img.etimg.com/thumb/width-640,height-480,imgsize-322599,resizemode-1,msid-69997940/indian-caf-chain-market-will-reach-rs-4540-cr-by-2023-report.jpg);
+  background: linear-gradient(rgba(255,86,115,0.45), rgba(255, 86, 115, 0.45)), url(https://img.etimg.com/thumb/width-640,height-480,imgsize-322599,resizemode-1,msid-69997940/indian-caf-chain-market-will-reach-rs-4540-cr-by-2023-report.jpg);
   border-radius: 15px;
   margin: 5px;
   background-position: center;
