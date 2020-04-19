@@ -1,6 +1,5 @@
 import React from "react";
-import { Input, DatePicker, PageHeader, Button, Form, InputNumber } from "antd";
-import { UserOutlined, MailOutlined } from "@ant-design/icons";
+import { Input, PageHeader, Button, Form, InputNumber } from "antd";
 
 export const SignUp = () => {
   const onFinish = values => {
@@ -8,13 +7,17 @@ export const SignUp = () => {
   };
 
   return (
-    <div className="signupContainer">
+    <div className="customContainer">
       <PageHeader
         className="site-page-header"
         onBack={() => null}
         title="Sign Up"
       />
-      <Form className="formContainer" name="nest-messages" onFinish={onFinish}>
+      <Form
+        className="signUpformContainer"
+        name="nest-messages"
+        onFinish={onFinish}
+      >
         <Form.Item
           name={["user", "name"]}
           rules={[
@@ -74,37 +77,5 @@ export const SignUp = () => {
         </Form.Item>
       </Form>
     </div>
-    // <div className="signupContainer">
-    //   <PageHeader
-    //     className="site-page-header"
-    //     onBack={() => null}
-    //     title="Sign Up"
-    //   />
-
-    //   <div className="inputContainer">
-    //     <Input
-    //       className="inputStyle"
-    //       placeholder="Enter your Name"
-    //       suffix={<UserOutlined className="site-form-item-icon" />}
-    //     />
-    //     <Input
-    //       className="inputStyle"
-    //       placeholder="Enter your Email"
-    //       suffix={<MailOutlined />}
-    //     />
-    //     <DatePicker placeholder="Select your Dob" className="inputStyle" />
-    //     <Input.Password
-    //       className="inputStyle"
-    //       placeholder="Enter your password"
-    //     />
-    //     <Input.Password
-    //       className="inputStyle"
-    //       placeholder="Confirm your password"
-    //     />
-    //     <Button className="inputStyle" type="primary">
-    //       Sign Up!
-    //     </Button>
-    //   </div>
-    // </div>
   );
 };
