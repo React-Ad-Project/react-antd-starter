@@ -65,7 +65,7 @@ export default class PostOffer extends Component {
           
           }}
         >
-          <div style={{fontFamily:"Josefin Sans"}}>Offer</div>
+          <div>Offer</div>
           <Input placeholder="What Your Offer is" style={{ width: 300,borderRadius:8,borderColor:"#FF4A40" }} />
         </div>
         <div
@@ -76,7 +76,7 @@ export default class PostOffer extends Component {
             alignItems: "center",
           }}
         >
-          <div style={{fontFamily:"Josefin Sans"}}>Picture</div>
+          <div>Picture</div>
           <Upload {...props}>
             <Button style={{ width: 300 ,borderRadius:8 ,backgroundColor:"#FF6969"}}>
               <UploadOutlined /> Click to Upload
@@ -86,7 +86,7 @@ export default class PostOffer extends Component {
         <div style={{fontFamily:"Josefin Sans"}}>Description</div>
         <TextArea
           rows={4}
-          style={{ width: "300px",borderRadius:8  }}
+          style={{ width: "300px",borderRadius:8 ,fontFamily:"Josefin Sans" }}
           placeholder="Offer Description"
         />
         <div className="postEndButton">Post</div>
