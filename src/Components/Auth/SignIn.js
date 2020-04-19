@@ -6,7 +6,7 @@ import { Form, Input, PageHeader, Button, Checkbox } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 
 const SignIn = () => {
-  const onFinish = (values) => {
+  const onFinish = values => {
     console.log("Received values of form: ", values);
   };
 
@@ -22,7 +22,7 @@ const SignIn = () => {
         name="normal_login"
         className="login-form signUpformContainer"
         initialValues={{
-          remember: true,
+          remember: true
         }}
         onFinish={onFinish}
       >
@@ -31,13 +31,13 @@ const SignIn = () => {
           rules={[
             {
               required: true,
-              message: "Please input your Username!",
-            },
+              message: "Please input your Username!"
+            }
           ]}
         >
           <Input
             prefix={<UserOutlined className="site-form-item-icon" />}
-            style={{ borderRadius: 10 }}
+            className="inputStyle"
             placeholder="Username"
           />
         </Form.Item>
@@ -46,13 +46,13 @@ const SignIn = () => {
           rules={[
             {
               required: true,
-              message: "Please input your Password!",
-            },
+              message: "Please input your Password!"
+            }
           ]}
         >
           <Input
             prefix={<LockOutlined className="site-form-item-icon fieldStyle" />}
-            style={{ borderRadius: 10 }}
+            className="inputStyle"
             type="password"
             placeholder="Password"
           />
