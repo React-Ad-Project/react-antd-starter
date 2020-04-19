@@ -12,21 +12,16 @@ const OfferViewCard = (props) => {
         hoverable
         className="main-card"
         style={{ width: 300, borderRadius: 10 }}
-        cover={
-          <img
-            alt="example"
-            src="https://wallpaperaccess.com/full/767046.jpg"
-          />
-        }
+        cover={<img alt="example" src={props.imgUrl} />}
       >
         <Meta title={props.title} description={props.location} />
-        <div className="catTag">Arabian</div>
-        <div className="distTag">2.5 Km</div>
+        <div className="catTag">{props.category}</div>
+        <div className="distTag">{props.distance} Km</div>
         <div className="cardRating">
           <Rate disabled defaultValue={1} count={1} />
-          <small className="rateContent">4.3</small>
+          <small className="rateContent">{props.rating}</small>
         </div>
-        <div className="offbox">50% Off</div>
+        <div className="offbox">{props.offer}</div>
       </Card>
     </div>
   );
