@@ -74,10 +74,6 @@
 }
 
 /* Offer Card styling */
-/* .main-card {
-  width: 350px;
-  border-radius: 10%;
-} */
 
 .cardRating {
   position: absolute;
@@ -119,8 +115,8 @@
   color: white;
   border-radius: 10px;
   text-align: center;
-  top: 75%;
-  right: 50%;
+  top: 72%;
+  right: 40%;
 }
 
 .distTag {
@@ -130,6 +126,40 @@
   color: white;
   border-radius: 10px;
   text-align: center;
-  top: 75%;
-  right: 30%;
+  top: 72%;
+  right: 15%;
+}
+
+.offerContainer {
+  width: 360px;
+  height: 650px;
+  margin: auto;
+  margin-top: 10%;
+
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(100%);
+
+  -webkit-box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.42);
+  box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.42);
+
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.content {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.offer-card {
+  margin-top: 20px;
 }

@@ -11,7 +11,7 @@ const OfferViewCard = (props) => {
       <Card
         hoverable
         className="main-card"
-        style={{ width: 350, borderRadius: 10 }}
+        style={{ width: 300, borderRadius: 10 }}
         cover={
           <img
             alt="example"
@@ -19,7 +19,7 @@ const OfferViewCard = (props) => {
           />
         }
       >
-        <Meta title="Ifthar Hotel" description="Edapally, Ernakulam" />
+        <Meta title={props.title} description={props.location} />
         <div className="catTag">Arabian</div>
         <div className="distTag">2.5 Km</div>
         <div className="cardRating">

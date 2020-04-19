@@ -6,6 +6,7 @@ import { SignUp } from "./Components/Auth/SignUp";
 import SignIn from "./Components/Auth/SignIn";
 import { ProfileEdit } from "./Components/Auth/ProfileEdit";
 import Profile from "./Components/Auth/Profile";
+import OfferView from "./Components/Auth/OfferView";
 
 class App extends Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path="/signin" component={SignIn} />
           <Route path="/profile/edit" component={ProfileEdit} />
           <Route path="/profile" component={Profile} />
+          <Route path="/view" component={OfferView} />
           <Route path="/" component={Home} />
         </Switch>
       </BrowserRouter>
