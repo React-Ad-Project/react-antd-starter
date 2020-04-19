@@ -66,7 +66,10 @@ export default class index extends Component {
         </div>
         <div className="wrapperParent">
           <div className="wrapper">
-            <CategoryCard cardName="Cafes" />
+            <CategoryCard
+              cardName="Cafes"
+              img="https://img.etimg.com/thumb/width-640,height-480,imgsize-322599,resizemode-1,msid-69997940/indian-caf-chain-market-will-reach-rs-4540-cr-by-2023-report.jpg"
+            />
             <CategoryCard cardName="Theaters" />
             <CategoryCard cardName="Electronics" />
             <CategoryCard cardName="Groceries" />
