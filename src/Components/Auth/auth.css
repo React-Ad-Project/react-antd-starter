@@ -1,13 +1,14 @@
 .signupContainer {
   width: 360px;
-  min-height: 650px;
+  height: 650px;
   margin: auto;
   margin-top: 10%;
 
-  /* background-image: url("./assets/bg.jpg");
+  background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&w=1000&q=80");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
-  background-color: white;
+  filter: brightness(100%);
 
   -webkit-box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.42);
   -moz-box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.42);
@@ -17,27 +18,30 @@
   flex-direction: column;
 }
 
-.inputContainer {
-  padding: 0px 50px;
+.formContainer {
+  height: 100%;
+  justify-content: center;
   display: flex;
-  height: 50%;
   flex-direction: column;
-  justify-content: space-around;
+  padding: 30px;
+  /* align-content: center; */
+  align-items: center;
 }
 
 .inputStyle {
   border-radius: 10px !important;
-  width: 100%;
+  width: 100% !important;
   font-size: 50px;
 }
 
-body {
+.bg {
   background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&w=1000&q=80");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: brightness(100%);
   height: 100%;
+  width: 100%;
 }
 
 .frm-algn {
