@@ -4,7 +4,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Components/Home";
 import { SignUp } from "./Components/Auth/SignUp";
 import SignIn from "./Components/Auth/SignIn";
-import { Profile } from "./Components/Auth/Profile";
+import { ProfileEdit } from "./Components/Auth/ProfileEdit";
+import Profile from "./Components/Auth/Profile";
 
 class App extends Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class App extends Component {
         <Switch>
           <Route path="/signup" component={SignUp} />
           <Route path="/signin" component={SignIn} />
+          <Route path="/profileedit" component={ProfileEdit} />
           <Route path="/profile" component={Profile} />
           <Route path="/" component={Home} />
         </Switch>
