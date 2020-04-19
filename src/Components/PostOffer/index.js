@@ -44,11 +44,12 @@ export default class PostOffer extends Component {
             flexDirection: "column",
           }}
         >
-          <div>Category</div>
+          <div style={{fontFamily:"Josefin Sans"}}>Category</div>
           <Select
             defaultValue="lucy"
-            style={{ width: 300 }}
+            style={{ width: 300, borderColor:"#8A98BA" }}
             onChange={handleChange}
+           
           >
             <Option value="jack">Jack</Option>
             <Option value="disabled" disabled>
@@ -61,10 +62,11 @@ export default class PostOffer extends Component {
             display: "flex",
             alignItems: "center",
             flexDirection: "column",
+          
           }}
         >
-          <div>Offer</div>
-          <Input placeholder="What Your Offer is" style={{ width: 300 }} />
+          <div style={{fontFamily:"Josefin Sans"}}>Offer</div>
+          <Input placeholder="What Your Offer is" style={{ width: 300,borderRadius:8,borderColor:"#FF4A40" }} />
         </div>
         <div
           style={{
@@ -74,17 +76,17 @@ export default class PostOffer extends Component {
             alignItems: "center",
           }}
         >
-          <div>Picture</div>
+          <div style={{fontFamily:"Josefin Sans"}}>Picture</div>
           <Upload {...props}>
-            <Button style={{ width: 300 }}>
+            <Button style={{ width: 300 ,borderRadius:8 ,backgroundColor:"#FF6969"}}>
               <UploadOutlined /> Click to Upload
             </Button>
           </Upload>
         </div>
-        <div>Description</div>
+        <div style={{fontFamily:"Josefin Sans"}}>Description</div>
         <TextArea
           rows={4}
-          style={{ width: "300px" }}
+          style={{ width: "300px",borderRadius:8  }}
           placeholder="Offer Description"
         />
         <div className="postEndButton">Post</div>
