@@ -6,6 +6,13 @@
     color: white;
 }
 
+.filter-main-layout {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .filter-location {
     display: flex;
     align-items: center;
@@ -18,4 +25,16 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.filter-apply-button {
+    height: 50px;
+    background-color: #5562ff;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
