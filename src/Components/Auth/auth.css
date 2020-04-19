@@ -72,3 +72,64 @@
 .nav-btn {
   margin-top: 20px;
 }
+
+/* Offer Card styling */
+/* .main-card {
+  width: 350px;
+  border-radius: 10%;
+} */
+
+.cardRating {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  background-color: white;
+  border-radius: 5px;
+  width: 60px;
+  padding-left: 8px;
+}
+
+.rateContent {
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 3px;
+  color: black;
+}
+
+.offbox {
+  width: 60px;
+  height: 31px;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  color: red;
+  font-weight: bold;
+  top: 2%;
+  left: 5%;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.catTag {
+  position: absolute;
+  width: 60px;
+  background-color: #cc00cc;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  top: 75%;
+  right: 50%;
+}
+
+.distTag {
+  position: absolute;
+  width: 60px;
+  background-color: #66ffcc;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  top: 75%;
+  right: 30%;
+}

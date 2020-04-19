@@ -10,6 +10,7 @@ import {
   HeartOutlined,
   BookOutlined,
   PhoneOutlined,
+  ExclamationCircleOutlined,
 } from "@ant-design/icons";
 
 const Profile = () => {
@@ -21,7 +22,7 @@ const Profile = () => {
         title="Profile"
         extra={[
           <Button
-            type="primary"
+            // type="primary"
             shape="circle"
             icon={<EditOutlined />}
             size="large"
@@ -75,7 +76,15 @@ const Profile = () => {
             icon={<BookOutlined />}
             size="middle"
           >
-            Saved
+            Your Posts
+          </Button>
+          <Button
+            type="primary"
+            className="nav-btn inputStyle"
+            icon={<ExclamationCircleOutlined />}
+            size="middle"
+          >
+            FAQs
           </Button>
         </div>
       </div>
