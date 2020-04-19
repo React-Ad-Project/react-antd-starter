@@ -14,7 +14,7 @@ const SignIn = () => {
     <div className="customContainer">
       <PageHeader
         className="site-page-header"
-        onBack={() => null}
+        backIcon="false"
         title="Sign In"
       />
       <Form

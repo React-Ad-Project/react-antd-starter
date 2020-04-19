@@ -66,12 +66,9 @@
 }
 
 .nav-links {
-  padding: 30px;
-  margin: auto;
+  padding: 60px;
 }
 
-.add-btn {
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
+.nav-btn {
+  margin-top: 20px;
 }
