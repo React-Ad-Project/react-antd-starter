@@ -6,23 +6,19 @@ import { Form, Input, PageHeader, Button, Checkbox } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 
 const SignIn = () => {
-  const onFinish = (values) => {
+  const onFinish = values => {
     console.log("Received values of form: ", values);
   };
 
   return (
     <div className="customContainer">
-      <PageHeader
-        className="site-page-header"
-        onBack={() => null}
-        title="Sign In"
-      />
+      <PageHeader className="site-page-header" title="Sign In" />
       <Form
         size="large"
         name="normal_login"
         className="login-form signUpformContainer"
         initialValues={{
-          remember: true,
+          remember: true
         }}
         onFinish={onFinish}
       >
@@ -31,8 +27,8 @@ const SignIn = () => {
           rules={[
             {
               required: true,
-              message: "Please input your Username!",
-            },
+              message: "Please input your Username!"
+            }
           ]}
         >
           <Input
@@ -46,8 +42,8 @@ const SignIn = () => {
           rules={[
             {
               required: true,
-              message: "Please input your Password!",
-            },
+              message: "Please input your Password!"
+            }
           ]}
         >
           <Input
