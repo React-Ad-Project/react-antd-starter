@@ -45,7 +45,11 @@ export const SignUp = () => {
             {
               pattern: RegExp(/^\d{10}$/),
               required: true,
+<<<<<<< HEAD
               message: "Please enter 10 digit phone!"
+=======
+              message: "Please enter your phone!"
+>>>>>>> 0abfa256266778919dc4b50a6f53814b805a79e2
             }
           ]}
         >
