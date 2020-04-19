@@ -2,17 +2,13 @@ import React from "react";
 import { Input, PageHeader, Button, Form, InputNumber } from "antd";
 
 export const SignUp = () => {
-  const onFinish = values => {
+  const onFinish = (values) => {
     console.log(values);
   };
 
   return (
     <div className="customContainer">
-      <PageHeader
-        className="site-page-header"
-        onBack={() => null}
-        title="Sign Up"
-      />
+      <PageHeader className="site-page-header" title="Sign Up" />
       <Form
         className="signUpformContainer"
         name="nest-messages"
@@ -23,8 +19,8 @@ export const SignUp = () => {
           rules={[
             {
               required: true,
-              message: "Pease enter your name"
-            }
+              message: "Pease enter your name",
+            },
           ]}
         >
           <Input placeholder="Name" className="inputStyle" />
@@ -35,8 +31,8 @@ export const SignUp = () => {
             {
               type: "email",
               required: true,
-              message: "Please input valid email!"
-            }
+              message: "Please input valid email!",
+            },
           ]}
         >
           <Input placeholder="Email" className="inputStyle" />
@@ -48,8 +44,8 @@ export const SignUp = () => {
             {
               pattern: RegExp(/^\d{10}$/),
               required: true,
-              message: "Please enter 10 digit phone!"
-            }
+              message: "Please enter 10 digit phone!",
+            },
           ]}
         >
           <Input placeholder="Phone" className="inputStyle" />
@@ -63,8 +59,8 @@ export const SignUp = () => {
               required: true,
               message: "Please enter your age!",
               min: 0,
-              max: 99
-            }
+              max: 99,
+            },
           ]}
         >
           <InputNumber placeholder="Age" className="inputStyle" />
