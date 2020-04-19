@@ -70,11 +70,11 @@ export default class index extends Component {
               cardName="Cafes"
               img="https://img.etimg.com/thumb/width-640,height-480,imgsize-322599,resizemode-1,msid-69997940/indian-caf-chain-market-will-reach-rs-4540-cr-by-2023-report.jpg"
             />
-            <CategoryCard cardName="Theaters" />
-            <CategoryCard cardName="Electronics" />
-            <CategoryCard cardName="Groceries" />
-            <CategoryCard cardName="Cafes" />
-            <CategoryCard cardName="Cafes" />
+            <CategoryCard cardName="Theaters" img="https://img.etimg.com/thumb/width-640,height-480,imgsize-322599,resizemode-1,msid-69997940/indian-caf-chain-market-will-reach-rs-4540-cr-by-2023-report.jpg"/>
+            <CategoryCard cardName="Electronics"img="https://img.etimg.com/thumb/width-640,height-480,imgsize-322599,resizemode-1,msid-69997940/indian-caf-chain-market-will-reach-rs-4540-cr-by-2023-report.jpg" />
+            <CategoryCard cardName="Groceries" img="https://img.etimg.com/thumb/width-640,height-480,imgsize-322599,resizemode-1,msid-69997940/indian-caf-chain-market-will-reach-rs-4540-cr-by-2023-report.jpg"/>
+            <CategoryCard cardName="Cafes" img="https://img.etimg.com/thumb/width-640,height-480,imgsize-322599,resizemode-1,msid-69997940/indian-caf-chain-market-will-reach-rs-4540-cr-by-2023-report.jpg" />
+            <CategoryCard cardName="Cafes" img="https://img.etimg.com/thumb/width-640,height-480,imgsize-322599,resizemode-1,msid-69997940/indian-caf-chain-market-will-reach-rs-4540-cr-by-2023-report.jpg" />
           </div>
         </div>
         <div
