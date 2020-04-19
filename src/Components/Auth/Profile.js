@@ -9,6 +9,7 @@ import {
   EditOutlined,
   HeartOutlined,
   BookOutlined,
+  PhoneOutlined,
 } from "@ant-design/icons";
 
 const Profile = () => {
@@ -38,31 +39,45 @@ const Profile = () => {
           }}
           icon={<UserOutlined />}
         />
-        <h1 className="name-text">User Name</h1>
-      </div>
-      <div className="nav-links">
-        <Button
-          type="primary"
-          shape="circle"
-          className="btn-wishlist"
-          icon={<HeartOutlined />}
-          size="large"
-        />
-        <Button
-          type="primary"
-          shape="circle"
-          className="add-btn"
-          icon={<PlusOutlined />}
-          size="large"
-        />
+        <div className="name-text">
+          <h1>User Name</h1>
+          <Button
+            type="primary"
+            shape="circle"
+            className="btn-wishlist"
+            icon={<PhoneOutlined rotate="90" />}
+            size="small"
+          />{" "}
+          +91 9188692836
+        </div>
 
-        <Button
-          type="primary"
-          shape="circle"
-          className="btn-wishlist"
-          icon={<BookOutlined />}
-          size="large"
-        />
+        <div className="nav-links">
+          <Button
+            type="primary"
+            className="inputStyle nav-btn"
+            icon={<HeartOutlined />}
+            size="middle"
+          >
+            Wishlist
+          </Button>
+          <Button
+            type="primary"
+            className=" inputStyle nav-btn"
+            icon={<PlusOutlined />}
+            size="middle"
+          >
+            Add Post{" "}
+          </Button>
+
+          <Button
+            type="primary"
+            className="nav-btn inputStyle"
+            icon={<BookOutlined />}
+            size="middle"
+          >
+            Saved
+          </Button>
+        </div>
       </div>
     </div>
   );
