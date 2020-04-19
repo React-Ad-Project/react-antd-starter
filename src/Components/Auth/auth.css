@@ -1,3 +1,51 @@
+.customContainer {
+  width: 360px;
+  height: 650px;
+  margin: auto;
+  margin-top: 10%;
+
+  background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&w=1000&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(100%);
+
+  -webkit-box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.42);
+  box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.42);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.signUpformContainer,
+.profileContainer {
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  /* align-content: center; */
+  align-items: center;
+}
+
+.inputStyle {
+  border-radius: 10px !important;
+  width: 100% !important;
+  font-size: 50px;
+}
+
+.customAvatarUpload {
+  width: unset !important;
+  margin: 0 !important;
+}
+
+.customAvatarUpload .ant-upload {
+  padding: 0 !important;
+  margin-right: 0 !important;
+  border-radius: 100px !important;
+}
+
 .bg {
   background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&w=1000&q=80");
   background-size: cover;
