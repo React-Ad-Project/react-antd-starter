@@ -46,6 +46,7 @@ export default class index extends Component {
               offerPercent="50%"
               type="Arabian"
               distance="12km"
+              pic="src\Components\Home\img\cafe.jpeg"
             />
             <OfferCard />
             <OfferCard />
