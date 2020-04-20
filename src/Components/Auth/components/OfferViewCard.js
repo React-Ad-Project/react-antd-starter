@@ -21,7 +21,7 @@ const OfferViewCard = (props) => {
           <Rate disabled defaultValue={1} count={1} />
           <small className="rateContent">{props.rating}</small>
         </div>
-        <div className="offbox">{props.offer}</div>
+        <div className="offbox">{props.off}</div>
       </Card>
     </div>
   );

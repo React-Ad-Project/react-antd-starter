@@ -1,7 +1,7 @@
 import React from "react";
 import "antd/dist/antd.css";
 import "./auth.css";
-import { PageHeader, Input, Button } from "antd";
+import { PageHeader, Input, Button, Affix } from "antd";
 import OfferViewCard from "./components/OfferViewCard";
 import { SearchOutlined, ControlOutlined } from "@ant-design/icons";
 
@@ -14,7 +14,7 @@ const OfferView = () => {
       category: "Arabian",
       rating: 4.2,
       off: "45% Off",
-      distance: 2.1
+      distance: 2.1,
     },
     {
       title: "Ifthar Hotel",
@@ -23,7 +23,7 @@ const OfferView = () => {
       category: "Arabian",
       rating: 4.2,
       off: "45% Off",
-      distance: 2.1
+      distance: 2.1,
     },
     {
       title: "Ifthar Hotel",
@@ -32,7 +32,7 @@ const OfferView = () => {
       category: "Arabian",
       rating: 4.2,
       off: "45% Off",
-      distance: 2.1
+      distance: 2.1,
     },
     {
       title: "Ifthar Hotel",
@@ -41,7 +41,7 @@ const OfferView = () => {
       category: "Arabian",
       rating: 4.2,
       off: "45% Off",
-      distance: 2.1
+      distance: 2.1,
     },
     {
       title: "Ifthar Hotel",
@@ -50,9 +50,10 @@ const OfferView = () => {
       category: "Arabian",
       rating: 4.2,
       off: "45% Off",
-      distance: 2.1
-    }
+      distance: 2.1,
+    },
   ];
+
   return (
     <div className="offerContainer">
       <PageHeader
@@ -60,6 +61,7 @@ const OfferView = () => {
         onBack={() => null}
         title="Find Offers"
       />
+
       <div className="search-bar">
         <Input
           className="inputStyle"
@@ -73,17 +75,9 @@ const OfferView = () => {
         />
       </div>
       <div className="content">
-        {offers.map(offer => (
+        {offers.map((offer) => (
           <div className="offer-card">
-            <OfferViewCard
-              title={offer.title}
-              location={offer.location}
-              imgUrl={offer.imgUrl}
-              category={offer.category}
-              rating={offer.rating}
-              distance={offer.distance}
-              offer={offer.off}
-            />
+            <OfferViewCard {...offer} />
           </div>
         ))}
       </div>
