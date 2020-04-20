@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "antd/dist/antd.css";
 import "./auth.css";
 import { PageHeader, Input, Button, Affix } from "antd";
@@ -54,26 +54,30 @@ const OfferView = () => {
     },
   ];
 
+  const [top, setTop] = useState(10);
+
   return (
     <div className="offerContainer">
-      <PageHeader
-        className="site-page-header"
-        onBack={() => null}
-        title="Find Offers"
-      />
-
-      <div className="search-bar">
-        <Input
-          className="inputStyle"
-          suffix={
-            <Button shape="circle" size="small" icon={<ControlOutlined />} />
-          }
-          prefix={<SearchOutlined />}
-          size="default"
-          placeholder="Search...."
-          //   onSearch={(value) => console.log(value)}
+      <Affix offsetTop={top} onChange={() => setTop(top + 10)}>
+        <PageHeader
+          className="site-page-header"
+          onBack={() => null}
+          title="Find Offers"
         />
-      </div>
+
+        <div className="search-bar">
+          <Input
+            className="inputStyle"
+            suffix={
+              <Button shape="circle" size="small" icon={<ControlOutlined />} />
+            }
+            prefix={<SearchOutlined />}
+            size="default"
+            placeholder="Search...."
+            //   onSearch={(value) => console.log(value)}
+          />
+        </div>
+      </Affix>
       <div className="content">
         {offers.map((offer) => (
           <div className="offer-card">
