@@ -76,6 +76,14 @@
 
 /* Offer Card styling */
 
+.main-card {
+  width: 300px;
+  border-radius: 10px !important;
+  -webkit-box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.42);
+  box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.42);
+}
+
 .cardRating {
   position: absolute;
   top: 2%;
@@ -149,11 +157,11 @@
 
   display: flex;
   flex-direction: column;
-  overflow: scroll;
 }
 
 .content {
-  justify-content: center;
+  overflow: scroll;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   display: flex;
@@ -168,5 +176,5 @@
 .search-bar {
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }

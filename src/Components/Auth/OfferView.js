@@ -54,17 +54,14 @@ const OfferView = () => {
     },
   ];
 
-  const [top, setTop] = useState(10);
-
   return (
     <div className="offerContainer">
-      <Affix offsetTop={top} onChange={() => setTop(top + 10)}>
+      <Affix offsetTop={0}>
         <PageHeader
           className="site-page-header"
           onBack={() => null}
           title="Find Offers"
         />
-
         <div className="search-bar">
           <Input
             className="inputStyle"
@@ -74,7 +71,7 @@ const OfferView = () => {
             prefix={<SearchOutlined />}
             size="default"
             placeholder="Search...."
-            //   onSearch={(value) => console.log(value)}
+            onPressEnter={(e) => console.log(e.target.value)}
           />
         </div>
       </Affix>
