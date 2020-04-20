@@ -52,11 +52,11 @@ export default class index extends Component {
         <Input
           size="large"
           placeholder="Find Offers"
-          prefix={<SearchOutlined />}
+          prefix={<SearchOutlined style={{marginRight:"15px"}}/>}
           suffix={<FilterOutlined />}
           style={{
             border: "none",
-            padding: "4px",
+            padding:"4px",
             height: "40px",
             display: "flex",
             flexDirection: "row",

@@ -6,6 +6,7 @@
   margin: auto;
   white-space: nowrap;
   align-items: center;
+
 }
 
 .homeMainDiv .wrapperParent {
@@ -17,7 +18,10 @@
   display: flex;
   flex-direction: row;
 }
-.wrapper{
-  scrollbar-width:none;
+.homeMainDiv .wrapper{
+  scrollbar-width: none;
 }
-
+.homeMainDiv .wrapper::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}

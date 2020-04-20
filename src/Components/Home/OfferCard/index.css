@@ -8,6 +8,9 @@
   border-radius: 15px;
   box-shadow: 2px 2px #e3e3e3;
   position: relative;
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(227,223,227,1);
+-moz-box-shadow: 1px 1px 5px 5px rgba(227,223,227,1);
+box-shadow: 1px 1px 5px 5px rgba(227,223,227,1);
   
 }
 
