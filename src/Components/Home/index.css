@@ -1,0 +1,19 @@
+.homeMainDiv {
+  width: 360px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.homeMainDiv .wrapperParent {
+  width: 100%;
+}
+
+.homeMainDiv .wrapper {
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+}

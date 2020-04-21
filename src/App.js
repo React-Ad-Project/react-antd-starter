@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import PostOffer from "./Components/PostOffer";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Components/Home";
 import { SignUp } from "./Components/Auth/SignUp";
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path="/profile/edit" component={ProfileEdit} />
           <Route path="/profile" component={Profile} />
           <Route path="/view" component={OfferView} />
+          <Route path="/post" component={PostOffer} />
           <Route path="/" component={Home} />
         </Switch>
       </BrowserRouter>

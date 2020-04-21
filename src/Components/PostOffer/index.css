@@ -1,0 +1,30 @@
+.postOfferMainDiv {
+  display: flex;
+  width: 360px;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  height: 80vh;
+  justify-content: space-between;
+}
+
+.topSection {
+  width: 360px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.postEndButton {
+  background-color: #0066ff;
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  color: #ffffff;
+  height: 50px;
+  border-radius: 30px 30px 0 0;
+}
