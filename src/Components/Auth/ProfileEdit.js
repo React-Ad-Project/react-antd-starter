@@ -7,6 +7,7 @@ import {
   InputNumber,
   Upload,
   message,
+  PageHeader,
 } from "antd";
 import { LoadingOutlined, PlusOutlined } from "@ant-design/icons";
 
@@ -61,6 +62,11 @@ export const ProfileEdit = () => {
 
   return (
     <div className="customContainer">
+      <PageHeader
+        className="site-page-header"
+        onBack={() => null}
+        title="Edit Profile"
+      />
       <Form className="signUpformContainer" name="nest-messages">
         <Upload
           name="avatar"

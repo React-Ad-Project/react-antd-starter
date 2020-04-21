@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "antd/dist/antd.css";
 import "./auth.css";
 import { Avatar, PageHeader } from "antd";
@@ -21,15 +22,16 @@ const Profile = () => {
         onBack={() => null}
         title="Profile"
         extra={[
-          <Button
-            // type="primary"
-            shape="circle"
-            icon={<EditOutlined />}
-            size="large"
-          />,
+          <Link to="/profile/edit">
+            <Button
+              // type="primary"
+              shape="circle"
+              icon={<EditOutlined />}
+              size="large"
+            ></Button>
+          </Link>,
         ]}
       />
-
       <div className="userContainer">
         <Avatar
           size={100}

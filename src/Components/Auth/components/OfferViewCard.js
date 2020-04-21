@@ -11,7 +11,9 @@ const OfferViewCard = (props) => {
       <Card
         hoverable
         className="main-card"
-        cover={<img alt="example" src={props.imgUrl} />}
+        cover={
+          <img style={{ borderRadius: 10 }} alt="example" src={props.imgUrl} />
+        }
       >
         <Meta title={props.title} description={props.location} />
         <div className="catTag">{props.category}</div>
