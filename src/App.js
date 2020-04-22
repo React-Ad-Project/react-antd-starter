@@ -8,6 +8,7 @@ import SignIn from "./Components/Auth/SignIn";
 import { ProfileEdit } from "./Components/Auth/ProfileEdit";
 import Profile from "./Components/Auth/Profile";
 import OfferView from "./Components/Auth/OfferView";
+import OfferCardProvider from "./context/OfferCardContext";
 
 class App extends Component {
   constructor(props) {
@@ -18,6 +19,7 @@ class App extends Component {
 
   render() {
     return (
+      <OfferCardProvider>
       <BrowserRouter>
         <Switch>
           <Route path="/signup" component={SignUp} />
@@ -29,6 +31,7 @@ class App extends Component {
           <Route path="/" component={Home} />
         </Switch>
       </BrowserRouter>
+      </OfferCardProvider>
     );
   }
 }

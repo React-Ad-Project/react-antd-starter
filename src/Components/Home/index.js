@@ -77,15 +77,7 @@ export default class index extends Component {
         </div>
         <div className="wrapperParent">
           <div className="wrapper">
-            <OfferCard
-              name="Ifthar Hotel"
-              address="KK building , NH47 , Edappally Kochi"
-              rating="3.5"
-              offerPercent="50%"
-              type="Arabian"
-              distance="12km"
-              pic="src\Components\Home\img\cafe.jpeg"
-            />
+            <OfferCard />
             <OfferCard />
             <OfferCard />
             <OfferCard />
