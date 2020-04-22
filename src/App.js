@@ -9,6 +9,7 @@ import { ProfileEdit } from "./Components/Auth/ProfileEdit";
 import Profile from "./Components/Auth/Profile";
 import OfferView from "./Components/Auth/OfferView";
 import OfferCardProvider from "./context/OfferCardContext";
+import CategoryCardProvider from "./context/CategoryCardcontext";
 
 class App extends Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class App extends Component {
 
   render() {
     return (
+      <CategoryCardProvider>
       <OfferCardProvider>
       <BrowserRouter>
         <Switch>
@@ -32,7 +34,11 @@ class App extends Component {
         </Switch>
       </BrowserRouter>
       </OfferCardProvider>
-    );
+      </CategoryCardProvider>
+    
+  
+      
+    )
   }
 }
 

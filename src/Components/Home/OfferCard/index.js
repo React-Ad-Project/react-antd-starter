@@ -2,24 +2,21 @@
 import React, { useState, useEffect,useContext } from "react";
 import "./index.css";
 import { StarOutlined, GoldenFilled } from "@ant-design/icons";
-import { OfferCardContext } from "../../../context/OfferCardContext";
 
-const OfferCard = () => {
-  const {cards}=useContext(OfferCardContext)
+
+const OfferCard = (props) => {
   return (
-    <div>
-      {cards.map((card)=>{
-            return(
+    
            <div className="offerCardMainDiv">
            <img
              alt="food"
              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Still_Life_Photograph.jpg/299px-Still_Life_Photograph.jpg"
              style={{ borderRadius: "15px" }}
            />
-           <div className="offerPercent" style={{color:"red"}}>{card.offerPercent}Off</div>
+           <div className="offerPercent" style={{color:"red"}}>{props.offerPercent}Off</div>
            <div className="offerRating">
              <StarOutlined style={{color:"gold"}}/>
-             <div>{card.rating}</div>
+             <div>{props.rating}</div>
            </div>
            <div className="bottomContent">
              <div
@@ -29,7 +26,7 @@ const OfferCard = () => {
                  justifyContent: "space-between",
                }}
              >
-               <div>{card.name}</div>
+               <div>{props.name}</div>
                <div
                  style={{
                    display: "flex",
@@ -38,21 +35,18 @@ const OfferCard = () => {
                    justifyContent: "space-between",
                  }}
                >
-                 <div className="tag">{card.type}</div>
-                 <div className="tag">{card.distance}</div>
+                 <div className="tag">{props.type}</div>
+                 <div className="tag">{props.distance}</div>
                </div>
              </div>
-             <div style={{fontFamily:"Josefin Sans"}}>{card.address}</div>
+             <div style={{fontFamily:"Josefin Sans"}}>{props.address}</div>
            </div>
          </div>
             )
 
-      })}
+                }
       
  
-    </div>
-  );
-};
 
 export default OfferCard;
 
