@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
-import { StarOutlined } from "@ant-design/icons";
+import { StarOutlined, GoldenFilled } from "@ant-design/icons";
 
 const OfferCard = (props) => {
   return (
@@ -10,9 +10,9 @@ const OfferCard = (props) => {
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Still_Life_Photograph.jpg/299px-Still_Life_Photograph.jpg"
         style={{ borderRadius: "15px" }}
       />
-      <div className="offerPercent">{props.offerPercent}Off</div>
+      <div className="offerPercent" style={{color:"red"}}>{props.offerPercent}Off</div>
       <div className="offerRating">
-        <StarOutlined />
+        <StarOutlined style={{color:"gold"}} />
         <div>{props.rating}</div>
       </div>
       <div className="bottomContent">
@@ -36,7 +36,7 @@ const OfferCard = (props) => {
             <div className="tag">{props.distance}</div>
           </div>
         </div>
-        <div>{props.address}</div>
+        <div style={{fontFamily:"Josefin Sans"}}>{props.address}</div>
       </div>
     </div>
   );

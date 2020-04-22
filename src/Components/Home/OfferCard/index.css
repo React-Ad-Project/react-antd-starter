@@ -8,6 +8,10 @@
   border-radius: 15px;
   box-shadow: 2px 2px #e3e3e3;
   position: relative;
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(227,223,227,1);
+-moz-box-shadow: 1px 1px 5px 5px rgba(227,223,227,1);
+box-shadow: 1px 1px 5px 5px rgba(227,223,227,1);
+  
 }
 
 .offerCardMainDiv .offerPercent {
@@ -42,7 +46,7 @@
 }
 
 .offerCardMainDiv .tag {
-  background-image: linear-gradient(#1aa4b8, #1a84b8);
+  background: -webkit-linear-gradient(right, #ff5773, #ff8d48);
   border-radius: 10px;
   padding: 3px;
 }
