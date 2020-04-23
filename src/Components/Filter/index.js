@@ -46,9 +46,9 @@ export default class extends Component {
                             alignItems: "center",
                         }}
                     >
-                        <LeftOutlined />
+                        <LeftOutlined  onClick={() => this.props.history.goBack()} />
                         <h3>Filter</h3>
-                        <CloseOutlined />
+                        <CloseOutlined onClick={() => this.props.history.goBack()} />
                     </div>
                     <div className="filter-inner-flex">
                         <h4>Location</h4>

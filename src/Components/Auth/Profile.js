@@ -14,12 +14,12 @@ import {
   ExclamationCircleOutlined,
 } from "@ant-design/icons";
 
-const Profile = () => {
+const Profile = ({history}) => {
   return (
     <div className="customContainer">
       <PageHeader
         className="site-page-header"
-        onBack={() => null}
+        onBack={() =>{history.goBack()} }
         title="Profile"
         extra={[
           <Link to="/profile/edit">

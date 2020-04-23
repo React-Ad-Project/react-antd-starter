@@ -12,7 +12,7 @@ import {
 } from "antd";
 import { LoadingOutlined, PlusOutlined } from "@ant-design/icons";
 
-export const ProfileEdit = () => {
+export const ProfileEdit = ({history}) => {
   const [imageUrl, changeImage] = useState();
   const [uploading, changeStatus] = useState(false);
   const [details, changeDetails] = useState({
@@ -66,7 +66,7 @@ export const ProfileEdit = () => {
       <PageHeader
         className="site-page-header"
         onBack={() => {
-          return <Link to='/profile' />
+          history.goBack()
 }
         }
         title="Edit Profile"

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./index.css";
 import { Input, Select, Upload, message, Button } from "antd";
 import { LeftOutlined, CloseOutlined, UploadOutlined } from "@ant-design/icons";
-
+import {Link} from 'react-router-dom'
 const { Option } = Select;
 const { TextArea } = Input;
 
@@ -33,9 +33,11 @@ export default class PostOffer extends Component {
     return (
       <div className="postOfferMainDiv">
         <div className="topSection">
-          <LeftOutlined />
+          <LeftOutlined  onClick={() => this.props.history.goBack()} />
           <div>Post Your Offer</div>
+          <Link to="/profile">
           <CloseOutlined />
+          </Link>
         </div>
         <div
           style={{

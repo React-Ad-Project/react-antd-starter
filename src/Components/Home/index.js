@@ -8,6 +8,7 @@ import { SearchOutlined, FilterOutlined } from "@ant-design/icons";
 import "./index.css";
 import { CategoryCardContext } from "../../context/CategoryCardcontext";
 import { OfferCardContext } from "../../context/OfferCardContext";
+import {Link} from 'react-router-dom'
 
 export default function Home() {
   const {cards}=useContext(OfferCardContext)
@@ -18,7 +19,11 @@ export default function Home() {
       size="large"
       placeholder="Find Offers"
       prefix={<SearchOutlined style={{marginRight:"15px"}}/>}
-      suffix={<FilterOutlined />}
+      suffix={
+        <Link to="/filter">
+      <FilterOutlined />
+      </Link>
+      }
       style={{
         border: "none",
         padding:"4px",

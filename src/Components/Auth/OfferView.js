@@ -6,7 +6,7 @@ import OfferViewCard from "./components/OfferViewCard";
 import { SearchOutlined, ControlOutlined } from "@ant-design/icons";
 import {Link}  from 'react-router-dom'
 
-const OfferView = () => {
+const OfferView = ({history}) => {
   const offers = [
     {
       title: "Ifthar Hotel",
@@ -60,7 +60,7 @@ const OfferView = () => {
       <Affix offsetTop={0}>
         <PageHeader
           className="site-page-header"
-          onBack={() => {return(<Link to="/"/>)}}
+          onBack={() => {history.goBack()}}
           title="Find Offers"
         />
         <div className="search-bar">

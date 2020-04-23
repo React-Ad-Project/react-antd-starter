@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from 'react-router-dom'
 import "./index.css";
 import {
   HomeOutlined,
@@ -10,13 +11,15 @@ import {
 const BottomBar = () => {
   const [selected, setSelected] = useState("home");
   return (
-    <div className="bottomBarMainDiv">
+    <div className="bottomBarMainDiv" style={{color:"black"}}>
+      <Link to="/">
       <HomeOutlined
         className="iconInBottomBar"
         onClick={() => {
           setSelected("home");
         }}
       />
+      </Link>
       <BookOutlined
         className="iconInBottomBar"
         onClick={() => {
@@ -29,12 +32,14 @@ const BottomBar = () => {
           setSelected("notifications");
         }}
       />
+      <Link to="/profile">
       <UserOutlined
         className="iconInBottomBar"
         onClick={() => {
           setSelected("profile");
         }}
       />
+      </Link>
     </div>
   );
 };
