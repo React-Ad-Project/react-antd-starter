@@ -11,12 +11,12 @@ import OfferView from "./Components/Auth/OfferView";
 import OfferCardProvider from "./context/OfferCardContext";
 import CategoryCardProvider from "./context/CategoryCardcontext";
 
+import Filter from "./Components/Filter";
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
+    constructor(props) {
+        super(props);
+    }
 
-  componentDidMount() {}
 
   render() {
     return (
@@ -31,6 +31,7 @@ class App extends Component {
           <Route path="/view" component={OfferView} />
           <Route path="/post" component={PostOffer} />
           <Route path="/" component={Home} />
+          <Route path="/filter" component={Filter} />
         </Switch>
       </BrowserRouter>
       </OfferCardProvider>
