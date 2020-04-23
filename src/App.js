@@ -30,7 +30,7 @@ class App extends Component {
           <Route path="/profile" component={Profile} />
           <Route path="/view" component={OfferView} />
           <Route path="/post" component={PostOffer} />
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/filter" component={Filter} />
         </Switch>
       </BrowserRouter>
