@@ -1,17 +1,23 @@
-import React,{createContext,useState} from 'react'
+import React,{createContext,useState,useEffect} from 'react'
 
 export const OfferCardContext =createContext();
 
  function OfferCardProvider(props) {
-   const[cards,SetCard]= useState([
-        { name:"Ifthar Hotel",
-        address:"KK building , NH47 , Edappally Kochi",
-        rating:"3.5",
-        offerPercent:"50%",
-        type:"Arabian",
-        distance:"12km"}
-        
-    ])
+     
+    const[cards,SetCard]= useState([])
+    useEffect(() => {
+        fetch("/api/allposts")
+          .then(res => res.json())
+          .then(
+            (result) => {
+              SetCard(result);
+            },
+            (error) => {
+             console.log(error)
+            }
+          )
+      }, [])
+
     return (
         <OfferCardContext.Provider value={{cards}}>
            {props.children}

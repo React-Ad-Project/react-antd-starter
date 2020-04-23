@@ -26,6 +26,15 @@ const detailsSchema = new Schema({
         type: Boolean,
         default: false
     },
+    offerPercent:{
+        type:string
+    },
+    type:{
+        type:string,
+    },
+    address:{
+        type:string,
+    },
     
     imageURL : { type : String },
 
