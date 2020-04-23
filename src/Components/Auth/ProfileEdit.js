@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link} from 'react-router-dom'
 import {
   Avatar,
   Button,
@@ -64,7 +65,10 @@ export const ProfileEdit = () => {
     <div className="customContainer">
       <PageHeader
         className="site-page-header"
-        onBack={() => null}
+        onBack={() => {
+          return <Link to='/profile' />
+}
+        }
         title="Edit Profile"
       />
       <Form className="signUpformContainer" name="nest-messages">

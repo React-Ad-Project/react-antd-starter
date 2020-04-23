@@ -4,6 +4,7 @@ import "./auth.css";
 import { PageHeader, Input, Button, Affix } from "antd";
 import OfferViewCard from "./components/OfferViewCard";
 import { SearchOutlined, ControlOutlined } from "@ant-design/icons";
+import {Link}  from 'react-router-dom'
 
 const OfferView = () => {
   const offers = [
@@ -59,14 +60,16 @@ const OfferView = () => {
       <Affix offsetTop={0}>
         <PageHeader
           className="site-page-header"
-          onBack={() => null}
+          onBack={() => {return(<Link to="/"/>)}}
           title="Find Offers"
         />
         <div className="search-bar">
           <Input
             className="inputStyle"
             suffix={
+              <Link to="/filter">
               <Button shape="circle" size="small" icon={<ControlOutlined />} />
+              </Link>
             }
             prefix={<SearchOutlined />}
             size="default"

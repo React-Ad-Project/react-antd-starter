@@ -63,6 +63,7 @@ const Profile = () => {
           >
             Wishlist
           </Button>
+          <Link to="/post">
           <Button
             type="primary"
             className=" inputStyle nav-btn"
@@ -71,6 +72,7 @@ const Profile = () => {
           >
             Add Post{" "}
           </Button>
+          </Link>
 
           <Button
             type="primary"
