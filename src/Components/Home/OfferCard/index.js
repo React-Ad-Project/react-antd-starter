@@ -2,11 +2,11 @@
 import React, { useState, useEffect,useContext } from "react";
 import "./index.css";
 import { StarOutlined, GoldenFilled } from "@ant-design/icons";
-
+import {Link} from 'react-router-dom'
 
 const OfferCard = (props) => {
   return (
-    
+            <Link to ="/view">
            <div className="offerCardMainDiv">
            <img
              alt="food"
@@ -42,6 +42,7 @@ const OfferCard = (props) => {
              <div style={{fontFamily:"Josefin Sans"}}>{props.address}</div>
            </div>
          </div>
+         </Link>
             )
 
                 }
