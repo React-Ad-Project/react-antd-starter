@@ -29,7 +29,7 @@ export default class extends Component {
                         padding: 20,
                     }}
                 >
-                    <LeftOutlined style={{ color: "#FFFFFF" }}/>
+                    <LeftOutlined style={{ color: "#FFFFFF" }} onClick={()=>{this.props.history.goBack()}}/>
                     <PushpinFilled style={{ color: "#FFFFFF" }}/>
                    
                 </div>
