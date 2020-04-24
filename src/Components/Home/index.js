@@ -48,7 +48,11 @@ export default function Home() {
     <div className="wrapperParent">
       <div className="wrapper">
       {cards.map((card) => {
-          return <OfferCard name={card.name} address={card.address} rating={card.rating} offerPercent={card.offerPercent} type={card.type} distance={card.distance} key={card.id}/>;
+          return (
+            <div key={card.id}>
+          <OfferCard name={card.name} address={card.address} rating={card.rating} offerPercent={card.offerPercent} type={card.type} distance={card.distance} />
+          </div>
+          )
         })}
         <OfferCard />
         <OfferCard />
@@ -69,8 +73,8 @@ export default function Home() {
     </div>
     <div className="wrapperParent">
       <div className="wrapper">
-        {ccards.catagories.map((item) => {
-          return <CategoryCard cardName={item.name} img={item.img} />;
+        {ccards.catagories.map((item,index) => {
+          return <CategoryCard cardName={item.name} img={item.img} key={index} />;
         })}
       </div>
     </div>

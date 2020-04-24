@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 const OfferCard = (props) => {
   return (
             <Link to ="/details">
-           <div className="offerCardMainDiv">
+           <div className="offerCardMainDiv" >
            <img
              alt="food"
              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Still_Life_Photograph.jpg/299px-Still_Life_Photograph.jpg"

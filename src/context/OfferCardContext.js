@@ -4,12 +4,15 @@ export const OfferCardContext =createContext();
 
  function OfferCardProvider(props) {
      
-    const[cards,SetCard]= useState([])
+    const[cards,SetCard]= useState([
+      
+    ])
     useEffect(() => {
         fetch("/api/allposts")
           .then(res => res.json())
           .then(
             (result) => {
+             
               SetCard(result);
             },
             (error) => {
