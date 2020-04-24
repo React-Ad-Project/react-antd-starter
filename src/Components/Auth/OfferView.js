@@ -81,7 +81,9 @@ const OfferView = ({history}) => {
       <div className="content">
         {offers.map((offer) => (
           <div className="offer-card">
+            <Link to= "/details">
             <OfferViewCard {...offer} />
+            </Link>
           </div>
         ))}
       </div>

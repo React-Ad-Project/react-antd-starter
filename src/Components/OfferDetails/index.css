@@ -1,0 +1,79 @@
+
+
+.offdis-background {
+    
+
+    background:white;
+    opacity: 0.5;
+    backdrop-filter: blur(6px);;
+    
+    color: white;
+}
+
+
+.offdis-location {
+    display: flex;
+    align-items: center;
+    min-width: 230px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+
+
+.offdis-blur-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.container{
+  background-image: url(./offerpic.png);
+  width: 100% ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.offdis-tag1 {
+    background: #ff5773;
+    background: -webkit-linear-gradient(right, #ff5773, #ff8d48);
+    background: -moz-linear-gradient(right, #ff5773, #ff8d48);
+    background: linear-gradient(to left, #ff5773, #ff8d48);
+    color: white;
+    border-radius: 10px;
+}
+
+.offdis-tag2 {
+    background: #848DFF;
+    color: white;
+    border-radius: 10px;
+}
+
+.offdis-tag3 {
+    background: #f4f5fd;
+    color: #4E4F76;
+    border-radius: 3px;
+}
+
+
+.offdis-main-layout {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  
+}
+
+.offdis-bodytext{
+color: #8A98BA
+}
+
+.offdis-inner-flex {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+
+
