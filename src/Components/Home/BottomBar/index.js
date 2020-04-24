@@ -10,23 +10,28 @@ import {
 
 const BottomBar = () => {
   const [selected, setSelected] = useState("home");
+
   return (
-    <div className="bottomBarMainDiv" style={{color:"black"}}>
+    <div className="bottomBarMainDiv" >
       <Link to="/">
       <HomeOutlined
         className="iconInBottomBar"
+        style={{color:"black"}}
         onClick={() => {
           setSelected("home");
+          
         }}
       />
       </Link>
       <BookOutlined
+        style={{color:"black"}}
         className="iconInBottomBar"
         onClick={() => {
           setSelected("saved");
         }}
       />
       <BellOutlined
+        style={{color:"black"}}
         className="iconInBottomBar"
         onClick={() => {
           setSelected("notifications");
@@ -34,6 +39,7 @@ const BottomBar = () => {
       />
       <Link to="/profile">
       <UserOutlined
+        style={{color:"black"}}
         className="iconInBottomBar"
         onClick={() => {
           setSelected("profile");
